@@ -1,7 +1,7 @@
 FROM pypa/bandersnatch
 # COPY ./sources.list /etc/apt/sources.list
 RUN apt-get update
-RUN	apt-get install -y nano nginx
+RUN apt-get install -y nano nginx
 
 # pip-mirror
 COPY ./bandersnatch.conf /conf/bandersnatch.conf
